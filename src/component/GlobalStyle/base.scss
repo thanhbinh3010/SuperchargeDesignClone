@@ -2,9 +2,13 @@
     border: none;
 }
 .navbar{
-    margin: 0 5rem;
-    height: 12rem;
+    height: 8rem;
     backdrop-filter: blur(10px) saturate(150%);
+    position: fixed;
+    background-color:#fff;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
 }
 .nav-link{
     color: #000;

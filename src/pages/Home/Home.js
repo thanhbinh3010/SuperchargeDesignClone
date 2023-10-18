@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
-import LearningResourcesSection from "../../component/LearningResourcesSection/LearningResourcesSection";
-import DesignIndustryStats from "../../component/DesignIndustryStats/DesignIndustryStats";
-import FlexibleLearningSection from "../../component/FlexibleLearningSection/FlexibleLearningSection";
-import UIMasteryCourseCard from "../../component/UIMasteryCourseCard/UIMasteryCourseCard";
+import LearningResourcesSection from "./components/LearningResourcesSection/LearningResourcesSection";
+import DesignIndustryStats from "./components/DesignIndustryStats/DesignIndustryStats";
+import FlexibleLearningSection from "./components/FlexibleLearningSection/FlexibleLearningSection";
+import UIMasteryCourseCard from "./components/UIMasteryCourseCard/UIMasteryCourseCard";
 import CourseCardCarousel from "../../component/CourseCardCarousel/CourseCardCarousel";
-import DesignExpertiseSection from "../../component/DesignExpertiseSection/DesignExpertiseSection";
-import TeamSection from "../../component/TeamSection/TeamSection";
-import BlogPostsSection from "../../component/BlogPostsSection/BlogPostsSection";
+import DesignExpertiseSection from "./components/DesignExpertiseSection/DesignExpertiseSection";
+import TeamSection from "./components/TeamSection/TeamSection";
+import BlogPostsSection from "./components/BlogPostsSection/BlogPostsSection";
 function Home() {
   return (
     <Fragment>

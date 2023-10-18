@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import CourseDetail from "../../component/CourseDetail";
-import TabOfContent from "../../component/TabOfContent";
-import Overview from "../../component/Overview";
-import Content from "../../component/Content";
-import WhatInside from "../../component/WhatInside";
+import CourseDetail from "./components/CourseDetail";
+import TabOfContent from "./components/TabOfContent";
+import Overview from "./components/Overview";
+import Content from "./components/Content";
+import WhatInside from "./components/WhatInside";
 
 function ProductDetail() {
   return (

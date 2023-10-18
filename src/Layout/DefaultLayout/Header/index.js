@@ -13,6 +13,26 @@ function Header() {
   const location = useLocation();
 
   useEffect(() => {
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+    const scrollOffset = 20;
+
+    const handleOnScroll = () => {
+      const currentScrollTop = window.scrollY;
+
+      if (currentScrollTop > lastScrollTop + scrollOffset) {
+        navbar.style.top = "-80px";
+      } else if (currentScrollTop < lastScrollTop - scrollOffset) {
+        navbar.style.top = "0";
+      }
+
+      lastScrollTop = currentScrollTop;
+    };
+    window.onscroll = function () {
+      handleOnScroll();
+    };
+  }, []);
+  useEffect(() => {
     // Lọc dữ liệu để tạo danh sách khóa học, sản phẩm và freebie
     const courses = courseData
       .filter((item) => item.CourseType === "Course")
@@ -49,7 +69,7 @@ function Header() {
   return (
     <>
       <div className="container-fluid block-site-navigation">
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light" id="navbar">
           <Link className="navbar-brand" to="/">
             <img
               src="https://supercharge.design/wp-content/uploads/2023/08/supercharge-design-logo.svg"
