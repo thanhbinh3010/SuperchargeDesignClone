@@ -1,0 +1,10 @@
+.active{
+    background-color: #FDF2F1;
+    color: #DE574D;
+    border-radius: 100rem;
+
+        :not(:active){
+            color: #DE574D;
+        }
+
+ }
